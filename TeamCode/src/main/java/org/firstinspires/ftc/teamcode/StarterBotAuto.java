@@ -91,6 +91,7 @@ public class StarterBotAuto extends OpMode
     final double DRIVE_SPEED = 0.5;
     final double ROTATE_SPEED = 0.2;
     final double WHEEL_DIAMETER_MM = 96;
+    // ticks per rev are different than 28 because of a gear ratio
     final double ENCODER_TICKS_PER_REV = 537.7;
     final double TICKS_PER_MM = (ENCODER_TICKS_PER_REV / (WHEEL_DIAMETER_MM * Math.PI));
     final double TRACK_WIDTH_MM = 402;
@@ -132,19 +133,23 @@ public class StarterBotAuto extends OpMode
         COMPLETE
     }
 
+
+
     /*
      * Here we create the instance of AutonomousState that we use in code. This creates a unique
      * object which can store the current condition of the shooter. In other applications,
      * you may have multiple copies of the same enum which have different names.
      * Here we just have one.
      */
+    // using an enum in a variable
+    //private AutonomousState tungTungTung = AutonomousState.DRIVE;
     private AutonomousState autonomousState;
 
     /*
      * This code runs ONCE when the driver hits INIT.
      */
     @Override
-    public void init() {
+    public void init() { // <- START HERE NEXT TIME
         /*
          * Here we set the first step of our autonomous state machine by setting
          * autonomousState = AutonomousState.LAUNCH. Later in our code, we will progress through
