@@ -45,7 +45,7 @@ public class AprilTagCamera {
      *
      *
      */
-    private AprilTagSingleDetection[] detectionMap;
+    private AprilTagDetection[] detectionMap;
 
     /**
      * Constructor - has to run before using anything in the file, sort of an "init" for our file
