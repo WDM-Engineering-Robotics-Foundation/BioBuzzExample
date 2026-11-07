@@ -33,6 +33,7 @@ import com.qualcomm.robotcore.hardware.DcMotorEx;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.PIDFCoefficients;
 
+// This is an ultra basic autonomous mode.  It just moves forward about two feet and stops.
 @Autonomous(name = "Super Basic Auto Mode", group = "StarterBot")
 //@Disabled
 public class SuperBasicAuto extends OpMode {
