@@ -67,7 +67,7 @@ public class AprilTagCamera {
         // get all the apriltags seen by the camera, and put them in our list
         detections = processor.getDetections();
         // reset all the slots on our detectionMap
-        detectionMap = new AprilTagDetection[5];
+        detectionMap = new AprilTagSingleDetection[5];
         // go through every item in the list and perform an "action" on it
         for (AprilTagDetection detection : detections) {
             // check if the detection is of a single tag
